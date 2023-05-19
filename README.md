@@ -24,5 +24,5 @@ df = mdocfile.read('my_mdoc_file.mdoc')
 pip:
 
 ```shell
-pip install mdocfile
+pip install git+https://github.com/hvdrosa/extended_mdocfile.git
 ```
