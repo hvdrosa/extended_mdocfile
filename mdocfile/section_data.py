@@ -72,6 +72,7 @@ class MdocSectionData(BaseModel):
         'PieceCoordinates',
         'SuperMontCoords',
         'ImageShift',
+        'SpecimenShift'
         'MinMaxMean',
         'StagePosition',
         'XedgeDxy',
