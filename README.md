@@ -6,7 +6,7 @@
 
 *Extended mdocfile* is an adaptation of mdocfile Python package (from Alister) for working with [SerialEM](https://bio3d.colorado.edu/SerialEM/) mdoc files supplemented with extra columns of SpecimenShift, EucentricOffset and CtfFind values (obtained with [PACETomo](https://github.com/eisfabian/PACEtomo.git) DoCtffind function).
 
-All credits of the original library to Alister!
+All credits of the original library to Alister! Thanks for making our lifes easier! #TeamTomo
 
 ---
 
