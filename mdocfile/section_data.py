@@ -72,7 +72,6 @@ class MdocSectionData(BaseModel):
         'PieceCoordinates',
         'SuperMontCoords',
         'ImageShift',
-        'SpecimenShift'
         'MinMaxMean',
         'StagePosition',
         'XedgeDxy',
@@ -101,12 +100,7 @@ class MdocSectionData(BaseModel):
             for k, v
             in key_value_pairs
         ]
-        
-        # Convert SpecimenShift value to a tuple
-        if "SpecimenShift" in lines:
-            specimen_shift = tuple(map(float, lines["SpecimenShift"].split()))
-            lines["SpecimenShift"] = specimen_shift
-        
+
         lines = {k: v for k, v in key_value_pairs}
         return cls(**lines)
 
