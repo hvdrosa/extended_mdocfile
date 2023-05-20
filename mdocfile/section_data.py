@@ -58,7 +58,7 @@ class MdocSectionData(BaseModel):
     CameraPixelSize: Optional[float]
     Voltage: Optional[float]
     #Following Parameters come from extended mdoc file from PACETomo
-    SpecimenShift: Optional[List[float, float]]
+    SpecimenShift: Optional[Tuple[float, float]]
     EucentricOffset: Optional[float]
     #These were added by me to contemplate the output from CtfFind
     CtfFindMeanDefocus: Optional[float]
