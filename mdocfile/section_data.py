@@ -58,7 +58,7 @@ class MdocSectionData(BaseModel):
     CameraPixelSize: Optional[float]
     Voltage: Optional[float]
     #Following Parameters come from extended mdoc file from PACETomo
-    #SpecimenShift: Optional[Tuple[float, float]]
+    SpecimenShift: Optional[List[float, float]]
     EucentricOffset: Optional[float]
     #These were added by me to contemplate the output from CtfFind
     CtfFindMeanDefocus: Optional[float]
@@ -84,6 +84,7 @@ class MdocSectionData(BaseModel):
         'FrameDosesAndNumbers',
         'FilterSlitAndLoss',
         'MultiShotHoleAndPosition',
+        
         pre=True)
     def multi_number_string_to_tuple(cls, value: str):
         return tuple(value.split())
