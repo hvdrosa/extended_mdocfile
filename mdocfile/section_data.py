@@ -57,8 +57,13 @@ class MdocSectionData(BaseModel):
     MultiShotHoleAndPosition: Optional[Union[Tuple[int, int], Tuple[int, int, int]]]
     CameraPixelSize: Optional[float]
     Voltage: Optional[float]
-    CtfFind: Optional[float]
-
+    CtfFindMeanDefocus: Optional[float]
+    CtfFindAstigmatism: Optional[float]
+    CtfFindMeanDefocus: Optional[float]
+    CtfFindAstigAxis: Optional[float]
+    CtfFindPhaseShift: Optional[float]
+    CtfFindFitScore: Optional[float]
+    CtfFindResFit: Optional[float]
     @validator(
         'PieceCoordinates',
         'SuperMontCoords',
