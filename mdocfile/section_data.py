@@ -84,6 +84,7 @@ class MdocSectionData(BaseModel):
         'FrameDosesAndNumbers',
         'FilterSlitAndLoss',
         'MultiShotHoleAndPosition',
+        'SpecimenShift'
         
         pre=True)
     def multi_number_string_to_tuple(cls, value: str):
